@@ -7,10 +7,10 @@ const fs = require('fs');
 const {promisify} = require('util');
 
 const SEND_EVENT_HUB = false;
-const SEND_SERVICE_BUS = true;
-const SEND_STORAGE_QUEUE = false;
+const SEND_SERVICE_BUS = false;
+const SEND_STORAGE_QUEUE = true;
 const MESSAGE_COUNT = 100;
-const BATCH_ID = -1;
+const BATCH_ID = -2;
 
 (async () => {
     await setEnvironment();
@@ -29,6 +29,8 @@ const BATCH_ID = -1;
         console.log('sending storage queue messages...');
         await storagequeue(MESSAGE_COUNT, BATCH_ID);
     }
+    console.log('finished');
+    process.exit();
 })();
 
 async function setEnvironment() {

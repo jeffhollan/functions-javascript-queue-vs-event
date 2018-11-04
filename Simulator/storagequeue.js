@@ -4,7 +4,8 @@ const {promisify} = require('util');
 
 module.exports = async function(count, batch) {
     const queueClient = azStorage.createQueueService(process.env['AzureWebJobsStorage']);
-    
+    queueClient.messageEncoder = new azStorage.QueueMessageEncoder.TextBase64QueueMessageEncoder();
+
     const createMessageAsync = promisify(queueClient.createMessage.bind(queueClient));
     for(let x = 1; x <= count; x++){
         try {

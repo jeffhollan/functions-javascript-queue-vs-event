@@ -18,7 +18,9 @@
         "run-script",
         "debug"
       ],
-      "port": 9229
+      "port": 9229,
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }

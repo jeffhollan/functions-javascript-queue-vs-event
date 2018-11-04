@@ -2,7 +2,7 @@
   "disabled": false,
   "bindings": [
     {
-      "name": "mySbMsg",
+      "name": "message",
       "type": "serviceBusTrigger",
       "direction": "in",
       "queueName": "queue",

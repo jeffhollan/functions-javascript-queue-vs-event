@@ -3,7 +3,7 @@
   "bindings": [
     {
       "type": "eventHubTrigger",
-      "name": "eventHubMessages",
+      "name": "message",
       "direction": "in",
       "eventHubName": "events",
       "connection": "EventHubsConnectionString",
