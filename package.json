@@ -1,0 +1,26 @@
+{
+  "name": "functions-javascript-queue-vs-event",
+  "version": "1.0.0",
+  "description": "Sample project to showcase difference in injestion rates for queues and event streams",
+  "main": "Simulator/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Simulator/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffhollan/functions-javascript-queue-vs-event.git"
+  },
+  "keywords": [
+    "serverless"
+  ],
+  "author": "Jeff Hollan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffhollan/functions-javascript-queue-vs-event/issues"
+  },
+  "homepage": "https://github.com/jeffhollan/functions-javascript-queue-vs-event#readme",
+  "dependencies": {
+    "azure-storage": "^2.10.2"
+  }
+}
