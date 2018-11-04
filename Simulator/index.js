@@ -7,8 +7,8 @@ const fs = require('fs');
 const {promisify} = require('util');
 
 const SEND_EVENT_HUB = false;
-const SEND_SERVICE_BUS = false;
-const SEND_STORAGE_QUEUE = true;
+const SEND_SERVICE_BUS = true;
+const SEND_STORAGE_QUEUE = false;
 const MESSAGE_COUNT = 100;
 const BATCH_ID = -1;
 

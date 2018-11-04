@@ -23,6 +23,7 @@
   "homepage": "https://github.com/jeffhollan/functions-javascript-queue-vs-event#readme",
   "dependencies": {
     "@azure/event-hubs": "^1.0.7",
+    "azure-sb": "^0.10.6",
     "azure-storage": "^2.10.2"
   }
 }
