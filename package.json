@@ -5,7 +5,8 @@
   "main": "Simulator/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Simulator/index.js"
+    "start": "node Simulator/index.js",
+    "debug": "node --inspect-brk Simulator/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/jeffhollan/functions-javascript-queue-vs-event#readme",
   "dependencies": {
+    "@azure/event-hubs": "^1.0.7",
     "azure-storage": "^2.10.2"
   }
 }

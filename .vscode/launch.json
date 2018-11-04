@@ -7,6 +7,18 @@
       "request": "attach",
       "port": 5858,
       "preLaunchTask": "runFunctionsHost"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Simulator",
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}",
+      "runtimeArgs": [
+        "run-script",
+        "debug"
+      ],
+      "port": 9229
     }
   ]
 }
