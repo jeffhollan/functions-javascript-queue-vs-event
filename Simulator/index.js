@@ -6,10 +6,10 @@ const storagequeue = require('./storagequeue');
 const fs = require('fs');
 const {promisify} = require('util');
 
-const SEND_EVENT_HUB = true;
+const SEND_EVENT_HUB = false;
 const SEND_SERVICE_BUS = false;
-const SEND_STORAGE_QUEUE = false;
-const MESSAGE_COUNT = 1000;
+const SEND_STORAGE_QUEUE = true;
+const MESSAGE_COUNT = 100;
 const BATCH_ID = -1;
 
 (async () => {
