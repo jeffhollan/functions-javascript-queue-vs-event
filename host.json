@@ -6,5 +6,16 @@
         "isEnabled": false
       }
     }
+  },
+  "extensions": {
+    "serviceBus": {
+      "messageHandlerOptions": {
+          "maxConcurrentCalls": 16
+      }
+    },
+    "queues": {
+      "batchSize": 16,
+      "newBatchThreshold": 8
+    }
   }
 }

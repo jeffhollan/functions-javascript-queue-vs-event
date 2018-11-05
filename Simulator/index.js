@@ -10,7 +10,7 @@ const SEND_EVENT_HUB = true;
 const SEND_SERVICE_BUS = true;
 const SEND_STORAGE_QUEUE = true;
 const MESSAGE_COUNT = 1000;
-const BATCH_ID = 2;
+const BATCH_ID = 1;
 
 (async () => {
     await setEnvironment();
